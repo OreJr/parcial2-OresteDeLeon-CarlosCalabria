@@ -22,6 +22,22 @@ public class Camion {
         this.marca = marca;
         this.turnos = new ArrayList<>();
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getPlaca() {
+        return placa;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public ArrayList<Turno> getTurnos() {
+        return turnos;
+    }
     
     
     
