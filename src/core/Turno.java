@@ -22,6 +22,20 @@ public class Turno {
     private LocalDateTime fechaInicio;
     private LocalDateTime fechaFin;
     private Residuo residuos;
+
+    public Turno(int id, Camion camion, Conductor conductor, Asistente asistente1, Asistente asistente2, Ruta ruta) {
+        this.id = id;
+        this.camion = camion;
+        this.conductor = conductor;
+        this.asistente1 = asistente1;
+        this.asistente2 = asistente2;
+        this.ruta = ruta;
+    }
+
+    public Turno() {
+    }
+    
+    
     
     
     public void ejecutar(LocalDateTime date, int suma) {

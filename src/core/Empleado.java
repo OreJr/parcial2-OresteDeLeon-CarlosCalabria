@@ -8,7 +8,7 @@ package core;
  *
  * @author examen
  */
-public class Empleado {
+public abstract class Empleado {
     
      protected int id;
      protected  String nombre;
