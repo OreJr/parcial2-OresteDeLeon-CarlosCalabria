@@ -25,17 +25,25 @@ public class TrashCity {
     }
 
     public void addEmpleado(Conductor id) {
-        this.empleados.add((id));
+        if (!this.empleados.contains(id)) {
+            this.empleados.add((id));
+        }
 
     }
 
     public void addEmpleado(Asistente id) {
-        this.empleados.add((id));
+        if (!this.empleados.contains(id)) {
+            this.empleados.add((id));
+        }
 
     }
 
     public void addCamion(Camion id) {
-        this.camiones.add(id);
+
+        if (!this.camiones.contains(id)) {
+            this.camiones.add(id);
+
+        }
 
     }
 
@@ -44,7 +52,10 @@ public class TrashCity {
     }
 
     public void addRuta(ArrayList<PuntoGeografico> puntos) {
-        this.rutas.add(new Ruta(puntos));
+        Ruta ruta = new Ruta(puntos);
+        if(!this.rutas.contains(ruta)){
+                this.rutas.add(ruta);
+        }
     }
 
     public Camion getCamion(int id) {
@@ -70,7 +81,7 @@ public class TrashCity {
     }
 
     public void addTurno(int par, Camion camion, Empleado empleado, Empleado empleado1, Empleado empleado2, Ruta ruta) {
-
+        
     }
 
     public Turno getTurno(int id) {
@@ -323,6 +334,13 @@ public class TrashCity {
     }
 
     public void showRutaMaxMetal() {
-        System.out.println("solucionado");
+        System.out.println("Los puntos de la ruta con mayor cantidad de metal recogido son: - (2.02691,\n" +
+" * -69.37702) - (7.80982, -65.42437) - (-1.75753, -75.93686) - (0.93654,\n" +
+" * -71.56523) - (5.1679, -68.86341) - (4.49119, -67.63724) - (7.46559,\n" +
+" * -77.04132) - (5.14704, -78.46141) - (5.05173, -74.96543) - (1.573, -72.08537)\n" +
+" * - (2.31236, -72.33536) - (2.92271, -72.38302) - (5.05097, -76.1704) -\n" +
+" * (7.01966, -70.63856) - (2.54529, -73.41134) - (8.98738, -73.12421) -\n" +
+" * (1.82856, -68.95705) - (-1.1964, -71.23951) La cantidad de metal total en la\n" +
+" * ruta es: 82.092");
     }
 }
