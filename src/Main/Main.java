@@ -4,6 +4,13 @@
  */
 package Main;
 
+import core.Asistente;
+import core.Camion;
+import core.Conductor;
+import core.PuntoGeografico;
+import core.TrashCity;
+import java.util.ArrayList;
+
 /**
  *
  * @author examen
