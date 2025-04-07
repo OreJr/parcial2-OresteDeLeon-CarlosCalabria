@@ -15,15 +15,15 @@ public class Turno {
     
     private int id;
     private Camion camion;
-    private Conductor conductor;
-    private Asistente asistente1;
-    private Asistente asistente2;
+    private Empleado conductor;
+    private Empleado asistente1;
+    private Empleado asistente2;
     private Ruta ruta;
     private LocalDateTime fechaInicio;
     private LocalDateTime fechaFin;
     private Residuo residuos;
 
-    public Turno(int id, Camion camion, Conductor conductor, Asistente asistente1, Asistente asistente2, Ruta ruta) {
+    public Turno(int id, Camion camion, Empleado conductor, Empleado asistente1, Empleado asistente2, Ruta ruta) {
         this.id = id;
         this.camion = camion;
         this.conductor = conductor;
@@ -54,15 +54,15 @@ public class Turno {
         return camion;
     }
 
-    public Conductor getConductor() {
+    public Empleado getConductor() {
         return conductor;
     }
 
-    public Asistente getAsistente1() {
+    public Empleado getAsistente1() {
         return asistente1;
     }
 
-    public Asistente getAsistente2() {
+    public Empleado getAsistente2() {
         return asistente2;
     }
 

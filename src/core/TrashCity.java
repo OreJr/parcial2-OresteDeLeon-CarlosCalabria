@@ -80,7 +80,7 @@ public class TrashCity {
         return this.rutas.get(id);
     }
 
-    public void addTurno(int par, Camion camion, Conductor empleado, Asistente empleado1, Asistente empleado2, Ruta ruta) {
+    public void addTurno(int par, Camion camion, Empleado empleado, Empleado empleado1, Empleado empleado2, Ruta ruta) {
         Turno turno = new Turno(par, camion, empleado, empleado1, empleado2, ruta);
         if(!this.turnos.contains(turno)){
           this.turnos.add(turno);
